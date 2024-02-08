@@ -10,28 +10,39 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section>
-        <h1>Добро пожаловать на мой сайт !</h1>
-        <p>Вам предстоит пройти несколько увлекательных игр. Если готов нажимай поехали и приступай</p>
-        <button>Поехали!</button>
+    <section class="top center">
+        <h1 class="top__title">Добро пожаловать на мой сайт !</h1>
+        <p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span
+                class="top__text top__text_bold">поехали</span> и <span
+                class="top__text top__text_bold">приступай</span></p>
+        <button class="top__button">Поехали!</button>
     </section>
 
-    <div>
-        <section>
-            <a href="#"><img src="./img/item_1.jpeg" alt="игра 1"></a>
-            <p>Игра 1</p>
-        </section>
-        <section>
-            <a href="#"><img src="./img/item_2.jpeg" alt="игра 2"></a>
-            <p>Игра 2</p>
-        </section>
-        <section>
-            <a href="#"><img src="./img/item_3.jpeg" alt="игра 3"></a>
-            <p>Игра 3</p>
-        </section>
+    <div class="content-box center">
+        <div class="content">
+            <section class="container">
+                <a href="#"><img class="container__image" src="./img/item_1.jpeg" alt="игра 1"></a>
+                <div class="container__bottomleft">
+                    <p>Игра 1</p>
+                </div>
+            </section>
+            <section class="container">
+                <a href="#"><img class="container__image" src="./img/item_2.jpeg" alt="игра 2"></a>
+                <div class="container__bottomleft">
+                    <p>Игра 2</p>
+                </div>
+            </section>
+            <section class="container">
+                <a href="#"><img class="container__image" src="./img/item_3.jpeg" alt="игра 3"></a>
+                <div class="container__bottomleft">
+                    <p>Игра 3</p>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 
