@@ -62,36 +62,38 @@ body {
   font-family: inherit;
   display: block;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .top__button:hover {
   background: rgb(235, 68, 63);
 }
 
 .content-box {
-  background-image: url(./img/background_2.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: rgb(0, 9, 21);
 }
 
 .content {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 32px;
+  flex-wrap: wrap;
   padding-top: 128px;
   padding-bottom: 128px;
 }
 
 .container {
   position: relative;
+  width: 376px;
+  box-sizing: border-box;
   transition: all 0.3s;
-  grid-column: span 4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.container:hover {
+  border: 3px solid rgb(68, 210, 255);
+  border-radius: 16px;
 }
 .container__image {
-  width: 376px;
+  width: 100%;
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(0023);
 }
