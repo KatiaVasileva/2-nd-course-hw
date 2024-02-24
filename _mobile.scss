@@ -33,6 +33,10 @@
         height: 654px;
         align-content: flex-start;
 
+        &_position {
+            height: 800px;
+        }
+
         &__content {
             align-items: center;
             margin-top: 51px;
@@ -49,7 +53,7 @@
             font-size: 14px;
             line-height: 22px;
             text-align: center;
-
+            width: 343px;
         }
 
         &__image {
