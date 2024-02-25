@@ -28,4 +28,37 @@
     .container {
         width: 343px;
     }
+
+    .game {
+        height: 654px;
+        align-content: flex-start;
+
+        &_position {
+            height: 800px;
+        }
+
+        &__content {
+            align-items: center;
+            margin-top: 51px;
+            margin-bottom: 64px;
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            width: 343px;
+        }
+
+        &__image {
+            width: 344px;
+            height: 236px;
+        }
+    }
 }

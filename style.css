@@ -47,7 +47,9 @@ body {
 .top__text_bold {
   font-weight: 700;
 }
-.top__button {
+
+.top__button,
+.game__button {
   border-radius: 30px;
   background: rgb(156, 3, 50);
   box-sizing: border-box;
@@ -64,7 +66,8 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
-.top__button:hover {
+.top__button:hover,
+.game__button:hover {
   background: rgb(235, 68, 63);
 }
 
@@ -108,6 +111,74 @@ body {
   letter-spacing: 0px;
 }
 
+.game {
+  background: rgb(0, 9, 21);
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.game_direction_reversed {
+  flex-direction: row-reverse;
+}
+.game_background_3 {
+  background-image: url(./img/background_game_3.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.game_position {
+  justify-content: center;
+}
+.game__content {
+  width: 584px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.game__content_position_center {
+  align-items: center;
+}
+.game__title {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.game__text {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.game__text_position_center {
+  text-align: center;
+  width: 1200px;
+}
+.game__image {
+  width: 485px;
+  height: 333px;
+}
+
+.footer {
+  height: 80px;
+  background-color: rgb(0, 9, 21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__text {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
 @media (max-width: 425px) {
   .center {
     padding-left: calc(50% - 171.5px);
@@ -133,5 +204,32 @@ body {
   }
   .container {
     width: 343px;
+  }
+  .game {
+    height: 654px;
+    align-content: flex-start;
+  }
+  .game_position {
+    height: 800px;
+  }
+  .game__content {
+    align-items: center;
+    margin-top: 51px;
+    margin-bottom: 64px;
+  }
+  .game__title {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .game__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    width: 343px;
+  }
+  .game__image {
+    width: 344px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
