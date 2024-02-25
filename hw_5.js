@@ -53,7 +53,7 @@ console.log(result);
 function greetUser() {
     let age = Number(prompt('Сколько вам лет?'));
 
-    if (age < 0) {
+    if (age < 0 || isNaN(age)) {
         alert('Вы ввели неправильное значение');
     } else if (age >= 0 && age <= 12) {
         alert('Привет, друг!');
@@ -75,7 +75,7 @@ function multiply(num1, num2) {
     num1 = Number(num1);
     num2 = Number(num2);
 
-    if (Number.isNaN(num1) || Number.isNaN(num2)) {
+    if (isNaN(num1) || isNaN(num2)) {
         return 'Одно или оба значения не являются числом';
     } else {
         return `Результат умножения этих чисел равен: ${num1 * num2}`;
@@ -100,7 +100,7 @@ n — введенное число, а '<получившееся значен�
 const cube = (num) => {
     num = Number(num);
 
-    if (Number.isNaN(num)) {
+    if (isNaN(num)) {
         return 'Переданный параметр не является числом';
     } else {
         return `${num} в кубе равняется ${Math.pow(num, 3)}`;
