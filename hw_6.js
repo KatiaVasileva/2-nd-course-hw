@@ -8,10 +8,10 @@
 
 console.log('Задание 1');
 
-let array1 = [1, 5, 4, 10, 0, 3];
+const array = [1, 5, 4, 10, 0, 3];
 let stopNumber = 10;
 
-for(let num of array1) {
+for(let num of array) {
     console.log(num);
     if (num === stopNumber) {
         break;
@@ -26,18 +26,18 @@ for(let num of array1) {
 
 console.log('Задание 2');
 
-let array2 = [1, 5, 4, 10, 0, 3];
+const arr = [1, 5, 4, 10, 0, 3];
 let number = 4;
 
 console.log('Вариант решения 1');
-for (let i = 0; i < array2.length; i++) {
-    if (array2[i] === 4) {
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 4) {
         console.log(`Индекс значения ${number} равен ${i}.`);
     }
 }
 
 console.log('Вариант решения 2');
-let index = array2.indexOf(number);
+let index = arr.indexOf(number);
 console.log(`Индекс значения ${number} равен ${index}.`);
 
 /* Задание 3
@@ -48,10 +48,10 @@ console.log(`Индекс значения ${number} равен ${index}.`);
 
 console.log('Задание 3');
 
-let array3 = [1, 3, 5, 10, 20];
+const numbers = [1, 3, 5, 10, 20];
 
-let numbers = array3.join(' ');
-console.log(numbers);
+let numbersToString = numbers.join(' ');
+console.log(numbersToString);
 
 /* Задание 4
 С помощью вложенных циклов создайте многомерный массив вида: [[1, 1, 1], [1, 1, 1], [1, 1, 1]].
@@ -63,7 +63,7 @@ console.log('Задание 4');
 
 let line = 3;
 let column = 3;
-let multiArray = new Array(line);
+const multiArray = new Array(line);
 
 for (let i = 0; i < multiArray.length; i++) {
     multiArray[i] = new Array(column);
@@ -84,10 +84,10 @@ console.log(multiArray);
 
 console.log('Задание 5');
 
-let array5 = [1, 1, 1];
+const nums = [1, 1, 1];
 
-array5.push(2, 2, 2);
-console.log(array5);
+nums.push(2, 2, 2);
+console.log(nums);
 
 /* Задание 6
 Дан массив: [9, 8, 7, 'a', 6, 5]. С помощью метода sort отсортируйте массив и удалите букву 'a' из массива. Затем выведите массив.
@@ -99,11 +99,10 @@ console.log(array5);
 
 console.log('Задание 6');
 
-let array6 = [9, 8, 7, 'a', 6, 5];
+const initialArray = [9, 8, 7, 'a', 6, 5];
 
-array6.sort();
-let filteredArray = array6.filter((el) => typeof el === 'number');
-console.log(filteredArray);
+const sortedAndFilteredArray = initialArray.sort().filter((el) => typeof el === 'number');
+console.log(sortedAndFilteredArray);
 
 /* Задание 7
 Дан массив: [9, 8, 7, 6, 5].
@@ -116,13 +115,13 @@ console.log(filteredArray);
 
 console.log('Задание 7: prompt/alert');
 
-let array7 = [9, 8, 7, 6, 5];
+const numberArray = [9, 8, 7, 6, 5];
 
 let guess = Number(prompt("Введите любое число"));
 
 if (isNaN(guess)) {
     alert("Это не число!");
-} else if (array7.includes(guess)) {
+} else if (numberArray.includes(guess)) {
     alert("Угадал!");
 } else {
     alert("Не угадал:(");
@@ -139,8 +138,7 @@ if (isNaN(guess)) {
 console.log('Задание 8');
 
 let string = 'abcdef';
-let stringArr = string.split('');
-stringArr.reverse();
+let stringArr = string.split('').reverse();
 string = stringArr.join('');
 console.log(string);
 
@@ -152,8 +150,8 @@ console.log(string);
 
 console.log('Задание 9');
 
-let twoDimArray = [[1, 2, 3],[4, 5, 6]];
-let oneDimArray = [...twoDimArray[0], ...twoDimArray[1]];
+const twoDimArray = [[1, 2, 3],[4, 5, 6]];
+const oneDimArray = [...twoDimArray[0], ...twoDimArray[1]];
 console.log(oneDimArray);
 
 /* Задание 10
@@ -167,10 +165,10 @@ console.log(oneDimArray);
 
 console.log('Задание 10');
 
-let array10 = [4, 9, 2, 5, 1, 7, 4];
+const numberArr = [4, 9, 2, 5, 1, 7, 4];
 
-for (let i = 0; i < array10.length - 1; i++) {
-    console.log(array10[i] + array10[i + 1]);
+for (let i = 0; i < numberArr.length - 1; i++) {
+    console.log(numberArr[i] + numberArr[i + 1]);
 }
 
 /* Задание 11
@@ -186,8 +184,8 @@ const getSquareArray = (array) => {
     return array.map(el => el ** 2);
 }
 
-let array11 = [5, 2, 9, 4, 1];
-let squareArray = getSquareArray(array11);
+const numArr = [5, 2, 9, 4, 1];
+let squareArray = getSquareArray(numArr);
 console.log(squareArray);
 
 /* Задание 12
@@ -203,7 +201,7 @@ const getStringLength = (stringArr) => {
     return stringArr.map(el => el.length);
 }
 
-let stringArray = ['apple', 'refrigerator', 'cat', 'computer', 'sofa'];
+const stringArray = ['apple', 'refrigerator', 'cat', 'computer', 'sofa'];
 let stringLengthArray = getStringLength(stringArray);
 console.log(stringLengthArray);
 
@@ -216,12 +214,12 @@ console.log(stringLengthArray);
 
 console.log('Задание 13');
 
-let getNegativeNumbers = (numArray) => {
+const getNegativeNumbers = (numArray) => {
     return numArray.filter(el => el < 0);
 }
 
-let numArray = [0, -3, 9, 8, -1, 7, -4];
-let negNumArray = getNegativeNumbers(numArray);
+const numArray = [0, -3, 9, 8, -1, 7, -4];
+const negNumArray = getNegativeNumbers(numArray);
 console.log(negNumArray);
 
 /* Задание 14
@@ -236,13 +234,13 @@ console.log(negNumArray);
 
 console.log('Задание 14');
 
-let randomArray = new Array(10);
+const randomArray = new Array(10);
 for (let i = 0; i < randomArray.length; i++) {
     randomArray[i] = Math.floor(Math.random() * 10);
 }
 console.log(randomArray);
 
-let evenNumberArray = randomArray.filter(el => el % 2 === 0);
+const evenNumberArray = randomArray.filter(el => el % 2 === 0);
 console.log(evenNumberArray);
 
 /* Задание 15
@@ -255,7 +253,7 @@ console.log(evenNumberArray);
 
 console.log('Задание 15');
 
-let randomArr = new Array(6);
+const randomArr = new Array(6);
 for (let i = 0; i < randomArr.length; i++) {
     randomArr[i] = Math.floor(Math.random() * 10) + 1;
 }
