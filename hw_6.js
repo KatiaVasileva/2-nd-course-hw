@@ -151,8 +151,17 @@ console.log(string);
 console.log('Задание 9');
 
 const twoDimArray = [[1, 2, 3],[4, 5, 6]];
-const oneDimArray = [...twoDimArray[0], ...twoDimArray[1]];
-console.log(oneDimArray);
+
+console.log('Решение с помощью flat()');
+const flatArray = twoDimArray.flat();
+console.log(flatArray);
+
+console.log('Решение с помощью spread');
+let oneDimArray = [];
+for(let i = 0; i < twoDimArray.length; i++) {
+	oneDimArray.push(...twoDimArray[i]);
+}
+console.log(flatArray);
 
 /* Задание 10
 Создайте массив с произвольными числами (диапазон от 1 до 10).Переберите его с помощью цикла for.
