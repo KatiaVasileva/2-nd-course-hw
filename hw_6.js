@@ -152,11 +152,11 @@ console.log('Задание 9');
 
 const twoDimArray = [[1, 2, 3],[4, 5, 6]];
 
-console.log('Решение с помощью flat()');
+console.log('Решение 1 с помощью flat()');
 const flatArray = twoDimArray.flat();
 console.log(flatArray);
 
-console.log('Решение с помощью spread');
+console.log('Решение 2 с помощью spread');
 let oneDimArray = [];
 for(let i = 0; i < twoDimArray.length; i++) {
 	oneDimArray.push(...twoDimArray[i]);
